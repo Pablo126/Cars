@@ -1,0 +1,52 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pablo12614.app.MainActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/wallpaper">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="79dp"
+            android:background="@drawable/abc_ab_transparent_light_holo"
+            android:layout_marginBottom="@dimen/abc_action_bar_subtitle_bottom_margin"
+            android:weightSum="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22dp"
+                android:text="Nombre:"
+                android:textColor="#FFFFFF"
+                android:id="@+id/textView"
+                android:layout_gravity="center_vertical" />
+
+            <EditText
+                android:layout_width="151dp"
+                android:layout_height="55dp"
+                android:id="@+id/editText"
+                android:inputType="textCapSentences"
+                android:textSize="22dp"
+                android:textColor="#FFFFFF"
+                android:layout_weight="0.81"
+                android:layout_gravity="center_vertical" />
+
+        </LinearLayout>
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="539dp"
+            android:id="@+id/listView"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center_horizontal|bottom" />
+
+    </TableLayout>
+
+</FrameLayout>
